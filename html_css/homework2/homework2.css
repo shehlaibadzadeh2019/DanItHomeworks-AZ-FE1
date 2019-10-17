@@ -18,7 +18,7 @@ ul {
     list-style-type: none;
     overflow: hidden;
     background-color: darkcyan;
-    margin: 25px;
+    margin: 35px;
 
 }
 li {
@@ -30,7 +30,7 @@ li {
 .logo {
     display: inline-block;
     text-align: left;
-    margin: 8px 0 4px 13px;
+    margin: 10px 0 4px 16px;
 }
 nav li a {
     display: inline-block;
@@ -38,8 +38,8 @@ nav li a {
     text-align: center;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 190px;
-    padding-right: 40px;
+    padding-left: 165px;
+    padding-right: 5px;
 
 }
 span {
@@ -58,7 +58,7 @@ aside {
 aside ul {
     display: flex;
     flex-direction: column;
-    margin: 20px 0 0 25px;
+    margin: 20px 0 0 35px;
     width: 240px;
     background-color: white;
     border: 2px solid lightgray;
@@ -73,14 +73,11 @@ aside ul li a {
 aside ul li a:hover {
     background-color: lightgray;
     padding-left: 40px;
-}
-li a.whyramda {
-    padding-left: 40px;
-    background-color: lightgray;
     color: black;
 }
+
 .main {
-    margin: 20px 50px 20px 0;
+    margin: 20px 35px 20px 35px;
     width: 70%;
     float: right;
 }
@@ -100,7 +97,7 @@ p {
     text-align: left;
     float: right;
     display: block;
-    margin: 15px;
+    margin: 17px 20px 15px 20px;
 }
 .active {
     margin-left: 55px;
@@ -115,10 +112,11 @@ footer {
 footer ul {
     padding: 5px 20px;
     color: #ffffff;
-    background-color: grey;
-    width: 94%;
-    margin: 25px;
-    margin-bottom: 10px;
+    background-color: darkgray;
+    width: 92%;
+
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 footer ul li {
     padding: 10px 10px;
@@ -127,19 +125,19 @@ footer ul li {
 }
 footer a {
     color: black;
-    transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 }
 
 footer a:hover {
-    color: rgb(28, 75, 116);
+    color: lightseagreen;
     border-bottom: 1px solid rgb(28, 75, 116);
 }
 footer li:last-child a {
     pointer-events: none;
     position: absolute;
-    right: 30px;
+    right: 55px;
 }
 .f-active {
-    color: lightseagreen;
+    color: mediumturquoise;
     text-decoration: underline;
 }
