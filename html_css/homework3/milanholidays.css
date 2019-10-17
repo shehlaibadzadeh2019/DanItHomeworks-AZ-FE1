@@ -1,0 +1,139 @@
+body{
+    font-family: Verdana,sans-serif;
+}
+.main-container{
+    background: url("background.png") no-repeat center /cover;
+}
+.container
+{
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    display: inline-block;
+    padding-top: 50px;
+}
+.contact {
+    float: right;
+}
+.logo {
+    float: left;
+    display: inline-block;
+    position: relative;
+}
+.logo-img {
+    float: left;
+    position: relative;
+    width: 46px;
+    height: 44px;
+    display: inline-block;
+
+}
+.logo-img-orange {
+    position: absolute;
+    width: 46px;
+    height: 44px;
+    left: -0.0001px;
+    display: none;
+}
+.logo:hover .logo-img-orange {
+    display: inline-block;
+}
+
+.logo-title {
+    font-family: Verdana, sans-serif;
+    color:  white;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    margin: 5px 0 0 5px;
+    display: inline-block;
+}
+.logo:hover .logo-title {
+    color: #f26522;
+}
+.contact-email, .contact-number {
+    font-family: Verdana, sans-serif;
+    color:  white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: right;
+}
+.content  {
+    margin-top: 20px;
+}
+.content-image {
+    position: relative;
+    width: 307px;
+    height: 200px;
+    overflow: hidden;
+    background-image: linear-gradient(white, black);
+    box-shadow: 0 17px 30px 0 black;
+
+}
+.view-details{
+    position: absolute;
+    width: 307px;
+    height: 50px;
+    background-color: #f26522;
+    color: white;
+    bottom: -50px;
+    transition: 0.4s linear;
+}
+.view-details p{
+    font-size: 11px;
+    padding: 10px 0 0 15px;
+}
+.price{
+    font-size: 18px;
+    padding: 0 0 0 15px;
+}
+.view-details-link{
+    float: right;
+    font-size: 13px;
+    padding: 0 15px 5px 0;
+    text-decoration: none;
+    color: white;
+}
+.view-details-link::after{
+    content: ' >';
+}
+.content-title{
+    text-align: center;
+    padding: 20px 0;
+}
+.content-title a{
+    font-family: Verdana, sans-serif;
+    color:  white;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.content .content-item:hover .view-details {
+    bottom: 0;
+}
+.content .content-item:hover .content-title a {
+    color: #f26522;
+}
+.content-img {
+    padding: 3px;
+    width: 300px;
+    height: 195px;
+}
+.footer {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0 20px 0;
+}
+.content-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
