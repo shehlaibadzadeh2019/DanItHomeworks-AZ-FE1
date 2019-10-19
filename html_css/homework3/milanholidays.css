@@ -39,6 +39,7 @@ body{
 }
 .logo:hover .logo-img-orange {
     display: inline-block;
+    cursor: pointer;
 }
 
 .logo-title {
@@ -53,6 +54,7 @@ body{
 }
 .logo:hover .logo-title {
     color: #f26522;
+    cursor: pointer;
 }
 .contact-email, .contact-number {
     font-family: Verdana, sans-serif;
@@ -113,11 +115,14 @@ body{
     text-decoration: none;
 }
 
-.content .content-item:hover .view-details {
+.content .content-image:hover .view-details {
     bottom: 0;
 }
 .content .content-item:hover .content-title a {
     color: #f26522;
+}
+.content-image:hover{
+    cursor: pointer;
 }
 .content-img {
     padding: 3px;
