@@ -22,10 +22,12 @@ ul {
 
 }
 li {
-    float: left;
+    display: inline-block;
+}
 
-    padding-right: 0px;
-
+.navbar{
+    width: 95%;
+    text-align: center;
 }
 .logo {
     display: inline-block;
@@ -35,17 +37,15 @@ li {
 nav li a {
     display: inline-block;
     color: white;
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 165px;
-    padding-right: 5px;
+
+    padding: 14px 36px 14px 36px;
+
 
 }
 span {
     color: black;
 }
-h1 {
+.logo-text {
     text-align: left;
     color: lightskyblue;
 }
@@ -93,17 +93,16 @@ img:hover {
     transform: scale(1.02);
 }
 
-p {
+.text {
     text-align: left;
     float: right;
     display: block;
     margin: 17px 20px 15px 20px;
 }
 .active {
-    margin-left: 55px;
+
     background-color: dimgrey;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 footer {
     display: inline-block;
@@ -135,7 +134,7 @@ footer a:hover {
 footer li:last-child a {
     pointer-events: none;
     position: absolute;
-    right: 55px;
+    right: 75px;
 }
 .f-active {
     color: mediumturquoise;
