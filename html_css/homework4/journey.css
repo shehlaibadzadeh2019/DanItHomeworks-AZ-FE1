@@ -5,6 +5,7 @@ html, body {
 body {
     background-image: url("back1.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .container {
     max-width: 1280px;
@@ -77,20 +78,24 @@ header .container {
     background-color: black;
     opacity: 0.2;
 }
+
 .icons__item--first-item:hover {
     margin-top: 0px;
     background: url("css_sprites (2).png") -90px -10px;
     width: 30px; height: 40px;
+    cursor: pointer;
 }
 .icons__item--second-item:hover  {
     margin-top: 0px;
     background: url("css_sprites (2).png") -50px -10px;
     width: 30px; height: 40px;
+    cursor: pointer;
 }
 .icons__item--third-item:hover  {
     margin-top: 0px;
     background: url("css_sprites (2).png") -90px -50px;
     width: 30px; height: 40px;
+    cursor: pointer;
 }
 .login-text {
     margin: 0;
