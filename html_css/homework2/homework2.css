@@ -36,10 +36,14 @@ li {
 }
 nav li a {
     display: inline-block;
+    align-items: center;
     color: white;
+    padding: 14px 45px 14px 45px;
 
-    padding: 14px 36px 14px 36px;
+}
+nav li a:hover {
 
+    background-color: dimgrey;
 
 }
 span {
@@ -99,11 +103,7 @@ img:hover {
     display: block;
     margin: 17px 20px 15px 20px;
 }
-.active {
 
-    background-color: dimgrey;
-
-}
 footer {
     display: inline-block;
     width: 100%;
@@ -129,14 +129,10 @@ footer a {
 
 footer a:hover {
     color: lightseagreen;
-    border-bottom: 1px solid rgb(28, 75, 116);
+    border-bottom: 1px solid lightseagreen;
 }
 footer li:last-child a {
     pointer-events: none;
     position: absolute;
-    right: 75px;
-}
-.f-active {
-    color: mediumturquoise;
-    text-decoration: underline;
+    right: 95px;
 }
