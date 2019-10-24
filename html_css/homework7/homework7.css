@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Droid Sans", arial, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 22em;
+    font-size: 45px;
+    color: rgb(251, 207, 0);
+    transform-origin: 50% 85%;
+    transform: perspective(200px) rotateX(16deg);
+    animation: scroll 30s linear 0s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}
+
+.episode {
+    margin-top: auto;
+}
+.text-one {
+    text-align: left;
+}
+.text-two {
+    text-align: justify;
+}
