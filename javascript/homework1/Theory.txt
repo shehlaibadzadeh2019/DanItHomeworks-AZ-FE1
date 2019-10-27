@@ -1,0 +1,11 @@
+1. Explain in your own words the difference between declaring variables via var, let and const.
+    
+	The old-fashioned way to declare a variable in JavaScript is by using the var keyword. In "var" we can initialize the value of that variable.
+    
+	The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.
+    
+	Const statement values can be assigned once and they cannot be reassigned. The scope of const statement works similar to let statements.
+
+2. Why is declaration of a variable via var considered a bad tone?
+    
+	Using var in this context would require a situation in which a variable declared inside a function would need to be used in the global scope
