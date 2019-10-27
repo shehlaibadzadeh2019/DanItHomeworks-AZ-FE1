@@ -1,0 +1,3 @@
+For example, outputting goods from a list one after another or just running the same code for each number from 1 to 10.
+
+Loops are a way to repeat the same code multiple times. Loops in computer programming are so important that they can perform tasks within seconds while reducing, to a great extent, time and efforts of the users. If the same activity that is done with the help of loops, is done manually, It would take hours and days. Without the loop structure in a computer program, the tasks are almost impossible to be performed.
