@@ -1,0 +1,4 @@
+1. Describe in your own words what the functions in programming are for.
+A function in a programming language is a program fragment that 'knows' how to perform a defined task. For example a function may be written that finds the average of three supplied numbers. Once written, this function may be used many times without having to rewrite it over and over.
+2. Describe in your own words what is the reason why arguments are defined in a function. Why are they passed when a function is called?
+In function in order to do any calculation we should have some argumentsso we can do calculation. In main part of code when calling function, we send any variables to the function and function will put them into place of its arguments
