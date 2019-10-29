@@ -1,0 +1,2 @@
+1. Explain in your own words what the object method is
+A method in object-oriented programming is a procedure associated with a class. A method defines the behavior of the objects that are created from the class. Another way to say this is that a method is an action that an object is able to perform.
