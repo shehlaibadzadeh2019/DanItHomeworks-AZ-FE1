@@ -1,0 +1,9 @@
+An escape character enables you to output characters you wouldn't normally be able to, usually because the browser will interpret it differently to what you intended.
+
+In JavaScript, the backslash (\) is an escape character.
+
+As an example, let's say I want to display the following text: They call it an "escape" character.
+
+***********document.write("They call it an \"escape\" character");**************
+
+The above code will display the double quotes as intended.
