@@ -3,10 +3,10 @@ document.body.appendChild(button);
 button.innerText = 'change thema';
 button.style.cssText =
   `position: absolute;
-top: 160px;
-font-size: 30px;
+top: 0px;
+left: 0;
+font-size: 15px;
 border-radius: 5px;
-left: 500px;
 color: green;
 background: #defdde;`;
 
@@ -16,6 +16,7 @@ let navigation = document.getElementsByClassName('main')[0];
 let headers = document.getElementsByClassName('header')[0];
 let cont = document.getElementsByClassName('content')[0];
 let btn = document.getElementsByClassName('btn')[0];
+let footer = document.getElementsByClassName('footer')[0];
 console.log('navigation', navigation)
 
 function newColors() {
@@ -24,6 +25,7 @@ function newColors() {
   headers.style.backgroundColor = 'lightgray';
   cont.style.backgroundColor = 'gray';
   btn.style.backgroundColor = 'gray';
+  footer.style.backgroundColor = 'lightgray'
   button.className = 'yes'
 }
 
@@ -33,6 +35,7 @@ function oldColors() {
   headers.style.backgroundColor = '';
   cont.style.backgroundColor = '';
   btn.style.backgroundColor = '';
+  footer.style.backgroundColor = ''
   button.className = ''
 }
 
