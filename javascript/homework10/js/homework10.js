@@ -7,8 +7,7 @@ document.addEventListener('click', function (event) {
         } else {
             input.type = 'password'
         }
-        event.target.classList.toggle('fa-eye-slash');
-        console.log(input);
+    
     }
     if (event.target.classList.contains('btn')) {
         event.preventDefault();
