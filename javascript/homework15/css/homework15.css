@@ -427,7 +427,7 @@
     color: white;
     text-decoration: none;
     height: 55px;
-    background: teal;
+    background-color: rgb(129, 125, 125);
 }
 
 .link {
@@ -448,7 +448,7 @@
     right: 20px;
     width: 150px;
     text-decoration: none;
-    background-color: teal;
+    background-color: rgb(129, 125, 125);
     color: white;
     text-align: center;
     z-index: 1000;
@@ -456,9 +456,9 @@
 
 .toggle-btn {
     display: flex;
-    width: 100px;
-    height: 100px;
-    background-color: teal;
+    width: 80px;
+    height: 70px;
+    background-color: rgb(129, 125, 125);
     padding: 20px;
     color: white;
     margin: 0 auto;
