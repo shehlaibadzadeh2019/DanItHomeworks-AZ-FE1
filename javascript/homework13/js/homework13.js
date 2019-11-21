@@ -1,54 +1,34 @@
-let button = document.createElement('button');
-document.body.appendChild(button);
-button.innerText = 'change thema';
-button.style.cssText =
-  `position: absolute;
-top: 0px;
-left: 0;
-font-size: 15px;
-border-radius: 5px;
-color: green;
-background: #defdde;`;
+let bColor = document.querySelector('.main');
+let header = document.querySelector('.header');
+let changeThemeBtn = document.querySelector('.btn');
+let theme = window.localStorage.getItem('theme');
 
-let body = document.getElementsByTagName('body')[0];
-
-let navigation = document.getElementsByClassName('main')[0];
-let headers = document.getElementsByClassName('header')[0];
-let cont = document.getElementsByClassName('content')[0];
-let btn = document.getElementsByClassName('btn')[0];
-let footer = document.getElementsByClassName('footer')[0];
-console.log('navigation', navigation)
-
-function newColors() {
-  body.style.backgroundColor = 'black';
-  navigation.style.backgroundColor = '#ba7a6c';
-  headers.style.backgroundColor = 'lightgray';
-  cont.style.backgroundColor = 'gray';
-  btn.style.backgroundColor = 'gray';
-  footer.style.backgroundColor = 'lightgray'
-  button.className = 'yes'
+function first() {
+    header.style.backgroundColor = "lightgray"
+    bColor.style.backgroundColor = "lightblue"
+    changeThemeBtn.className = "firstt"
 }
 
-function oldColors() {
-  body.style.backgroundColor = '';
-  navigation.style.backgroundColor = '';
-  headers.style.backgroundColor = '';
-  cont.style.backgroundColor = '';
-  btn.style.backgroundColor = '';
-  footer.style.backgroundColor = ''
-  button.className = ''
+function second() {
+  header.style.backgroundColor = "gray"
+    bColor.style.backgroundColor = "grey"
+    changeThemeBtn.className = ""
 }
 
-button.onclick = (() => {
-  if (!button.className) {
-    localStorage.setItem('newThema', 'yes')
-    newColors()
-  } else {
-    oldColors()
-    localStorage.setItem('newThema', 'no')
-  }
-})
+changeThemeBtn.addEventListener('click',changeTheme);
 
-if(localStorage.getItem('newThema') === 'yes'){
-  newColors()
+function changeTheme(){
+    if (!changeThemeBtn.className) {
+        localStorage.setItem('theme', 'firstt') 
+        first();
+    } else {
+        second();
+        localStorage.setItem('theme', 'light')
+        
+    }
+}
+
+
+if (localStorage.getItem('theme') === 'dark') {
+    dark()
 }
