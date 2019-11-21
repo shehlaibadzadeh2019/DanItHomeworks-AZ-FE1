@@ -1,20 +1,39 @@
-document.addEventListener('click', function (event) {
-    if (event.target.classList.contains('icon-password')) {
-        const input = event.target.previousElementSibling;
-        if (input.type === 'password') {
-            input.type = 'text';
+let password = document.querySelector('.password');
+let confirmPass = document.querySelector('.confirmPassword');
+let visible = document.querySelector('.fa-eye');
+let hidden = document.querySelector('.fa-eye-slash');
+let submit = document.querySelector('.btn')
+let error = document.querySelector('span')
 
-        } else {
-            input.type = 'password'
-        }
+visible.addEventListener('click', () => {
+    if (password.type == "text") {
+        password.type = "password";
+        visible.classList.add("fa-eye-slash");
+        visible.classList.remove("fa-eye");
+    } else {
+        password.type = "text";
+        visible.classList.remove("fa-eye-slash");
+        visible.classList.add("fa-eye");
+    }
+})
+hidden.addEventListener('click', () => {
+    if (confirmPass.type == "text") {
+        confirmPass.type = "password"
+        hidden.classList.add("fa-eye-slash");
+        hidden.classList.remove("fa-eye");
+    } else {
+        confirmPass.type = "text";
+        hidden.classList.remove("fa-eye-slash");
+        hidden.classList.add("fa-eye");
+    }
+})
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (password.value != confirmPass.value) {
+        error.innerText = 'You need to enter the identical values';
+    } else {
+        error.innerText = '';
+        alert('You are welcome');
     
     }
-    if (event.target.classList.contains('btn')) {
-        event.preventDefault();
-        if (document.querySelectorAll('input')[0].value===document.querySelectorAll('input')[1].value) {
-            alert('You are welcome');
-        } else {
-            document.getElementById('red-text').style.display = 'block'
-        }
-    }
-});
+})
