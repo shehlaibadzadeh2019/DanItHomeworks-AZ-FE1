@@ -1,5 +1,5 @@
 let mobaleMenuIsOpen = false;
-const openBtn = document.querySelector('.btn-menu');
+let openBtn = document.querySelector('.btn-menu');
 const openMenu = document.querySelector('.navbar-toggler');
 const closeMenu = document.querySelector('.submenu-btn');
 const menu = document.querySelector('.submenu');
