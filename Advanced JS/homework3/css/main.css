@@ -1,0 +1,33 @@
+.game{
+    margin: 50px 200px 50px 250px;
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+.hole{
+    border: 2px solid gray;
+    padding: 30px;
+}
+
+button{
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.button:focus{
+    background-color: darkgoldenrod;
+}
+
+.active{
+    background-color: blue;
+}
+
+.greenCell{
+    background-color: green;
+}
+
+.redCell{
+    background-color: red;
+}
