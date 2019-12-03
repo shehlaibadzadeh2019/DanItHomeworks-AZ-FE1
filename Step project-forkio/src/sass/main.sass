@@ -1,0 +1,475 @@
+@import "libs/bootstrap.min.css"
+
+
+$primary: #8d81ac
+$Hfont: 'Montserrat', sans-serif
+
+body
+    padding: 0
+    margin: 0
+    font-family: 'Lato', sans-serif
+
+h1, h2, h3, h4, h5
+    font-family: 'Montserrat', sans-serif
+
+@import "header.sass"
+
+
+.first-bg-container
+    background-image: url('../img/bg@2x.jpg')
+    background-size: cover
+    height: 800px
+    width: 100%
+    display: flex
+    justify-content: center
+    padding: 60px
+    .first-bg-texts
+        text-align: center
+        color: white
+    .first-bg-text1
+        font-weight: 900
+        font-size: 81px   
+    .first-bg-text2
+        font-size: 29px
+        font-family: 'Lato'
+        color: #8d81ac
+    .first-bg-text3
+        font-size: 18px
+        font-family: 'Montserrat'
+        color: #848e97
+
+.free-now-btn
+    border-radius: 40px !important
+
+
+.revolutionary-editor
+    padding: 10px
+    text-align: center
+    .download
+        text-align: center
+        font-family: 'Montserrat'
+    .download-btn
+        background: #8d81ac
+        padding: 15px
+        width: 390px
+        font-size: 21px
+        font-weight: bold
+        color: white
+        margin-bottom: 20px
+        margin-top: -40px
+
+    .download-btn:hover
+        background-color: white
+        border: 1px solid #8d81ac
+        color: #8d81ac
+        
+    .download-txt
+        font-size: 14px
+        color: #848e97
+        
+    .container
+        padding-top: 60px
+        padding-bottom: 70px
+
+    .revolutionary-texts
+        text-align: center
+        padding-bottom: 25px
+    .revolutionary-texts-first
+        color: #635c73
+        font-size: 53px
+        text-transform: uppercase
+        font-weight: 900
+        text-align: center
+    .revolutionary-texts-second
+        color: #323232
+        font-family: 'Lato'
+        font-size: 20px
+        padding: 15px
+    .social-items
+        display: flex
+        padding: 0 !important
+        border: 1px solid #d5d5d5
+        border-radius: 5px
+        margin-left: 5px
+        font-weight: 900
+    .first-item, .second-item
+        padding: 3px 18px
+        font-size: 16px
+        font-family: 'Lato'
+    .first-item
+        background: #e4e1e1
+        border-right: 1px solid #d5d5d5
+    .far
+        font-size: 17px
+    .fas
+        font-size: 17px
+//*******************************************WHAT YOU GET**************************/
+.what-you-get-container
+    display: flex
+    background: #e9e7e7
+    padding: 70px 0 50px 90px
+    .what-you-get-list-item
+        display: flex
+    .here-is-what
+        display: none
+    .what-you-get-img
+       padding: 27px
+       text-align: center
+    .what-you-get-img-same
+        padding: 32px
+    .what-you-get-img-size
+        width: 100px
+        height: 70px
+    .size-height
+        width: 90px
+        height: 115px
+    .size-fourth
+        width: 90px
+        height: 75px
+    .what-you-get-right-header
+        font-weight: 900
+        font-family: 'Montserrat'
+        font-size: 48px
+        color: #8d81ac
+        padding-left: 20px
+    .what-you-get-text-first
+            font-size: 16px
+            color: #323232
+    .what-you-get-text-second
+           color: #848e97
+           font-size: 14px 
+    .what-you-get-right
+        padding-left: 82px
+
+    .what-you-get-right-img-size
+        cursor: pointer
+    
+
+    
+
+//*************************TALKING ABOUT FORK**************************/
+
+
+.talk-about-fork-container
+    background-image:url('../img/testmonials-bg@2x.jpg')
+    background-position: center
+    padding-left: 91px 
+    padding-right: 91px
+    padding-bottom: 45px
+    margin-bottom: 0px
+
+.talk-about-fork-header
+    padding-top: 80px
+    padding-bottom: 85px
+    text-align: center
+.talk-about-fork-header-text
+    font-weight: 900
+    font-family: 'Montserrat'
+    font-size: 48px
+    color: white
+    
+.talk-about-fork-text
+    font-size: 16px
+    font-family: 'Lato'
+    font-style: italic
+    padding-top: 38px
+    color: white
+
+.talk-about-fork-item
+    text-align: center
+.first-trio
+    padding-bottom: 100px
+.talk-about-fork-last-text
+        font-size: 14px
+        font-family: 'Lato'
+        color: #a291a5
+        text-align: center
+        padding-left: 170px
+        padding-right: 144px
+        padding-top: 45px
+        &::after
+            content: ''
+            display: block
+            border-bottom: 2px solid #a291a563
+            width: 90%
+            padding-top: 15px 
+            margin-left: 50px
+
+//******************************PRICING TABLE***************************/
+
+
+.pricing 
+  background-image: url("../img/testmonials-bg@2x.jpg")
+ 
+  .pricing-title 
+    color: white
+    font-family: "Montserrat"
+    font-weight: bold
+    font-size: 45px
+    text-align: center
+    text-transform: capitalize
+    padding-top: 60px
+    margin-bottom: 95px
+  
+.pricing-container 
+  display: grid
+  grid-template-columns: 20% 20% 23% 20%
+  grid-gap: 1%
+  justify-content: center
+  padding-bottom: 100px
+
+
+.pricing-item 
+  background-color: rgba(255, 255, 255, 0.1)
+  position: relative
+  font-family: "Montserrat"
+  text-align: center
+
+  .pricing-item-title 
+    font-size: 20px
+    color: white
+    background-color: rgba(255, 255, 255, 0.15)
+    text-transform: uppercase
+    padding: 45px 0 35px
+  
+  .pricing-item-price 
+    font-weight: bold
+    font-size: 60px
+    color: white
+    margin: 35px 0 25px
+  
+  .pricing-item-time 
+    font-size: 15px
+    text-transform: uppercase
+    color: rgba(255, 255, 255, 0.3)
+    margin-bottom: 64px
+  
+  .pricing-item-time::after 
+    content: " "
+    padding: 0 30px
+    border: 2px solid #9186af
+    position: absolute
+    right: calc((100% - 64px) / 2)
+    top: 300px
+  
+  .pricing-item-about 
+    color: white
+    font-size: 16px
+    text-transform: capitalize
+    line-height: 30px
+    margin: 0 10px 85px
+  
+  .pricing-item-btn 
+    position: absolute
+    display: inline-block
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 15px
+    color: white
+    background-color: rgba(255, 255, 255, 0.15)
+    border-radius: 20px
+    cursor: pointer
+    bottom: 30px
+    left: calc(50% - 72px)
+    padding: 12px 30px
+  
+.pricing-item-btn:hover
+    color: rgba(0, 0, 0, 0.5)
+    font-weight: bold
+    background-color: rgba(255, 255, 255, 0.65)
+
+
+#agency.pricing-item 
+  background-color: rgba(0, 0, 0, 0.2)
+  transform: scale(1.2)
+  margin: 0 calc(10% - 4px)
+
+
+#agency .pricing-item-title 
+  background-color: rgba(0, 0, 0, 0.2)
+
+
+
+    //****************************************************MEDIA****************************/
+@media (max-width: 1200px) and (min-width: 993px)
+    .what-you-get-container
+        padding: 50px 0 50px 90px
+    .what-you-get-text
+        width: 270px
+    .what-you-get-img-size
+        width: 80px
+    .talk-about-fork-last-text
+        padding-left: 70px
+        padding-right: 70px
+
+
+@media (max-width: 992px) and (min-width: 481px)
+    .first-bg-container
+        background-position: center
+    .first-bg-h2
+        font-size: 24px
+    .revolutionary-editor
+        .revolutionary-texts-first
+            font-size: 40px
+        .social-items .fas, .far
+            font-size: 14px
+    .what-you-get-right-header
+        display: none
+    .here-is-what
+        display: block !important
+        font-size: 46px
+        color: #8d81ac
+        font-weight: 900
+        text-align: center
+        font-family: 'Montserrat'
+        padding-bottom: 55px
+    .what-you-get-container
+        flex-direction: column
+        padding-left: 20px 
+        padding-right: 20px
+        .what-you-get-right-img-size
+            width: 830px
+            height: 470px
+        .what-you-get-right
+            padding-left: 75px
+        .what-you-get-list
+            margin-bottom: 67px
+     
+    .talk-about-fork-container
+        padding-left: 20px 
+        padding-right: 20px
+        .talk-about-fork-header-text
+            font-size: 42px
+        .talk-about-fork-item
+            text-align: center
+        .first-trio
+            padding-bottom: 50px
+        .talk-about-fork-last-text
+            font-family: 'Lato'
+            padding-left: 40px
+            padding-right: 0
+            font-size: 19px
+
+.pricing-title 
+    font-size: 43px
+    margin-bottom: 50px
+    line-height: 60px
+  
+  .pricing-container 
+    grid-template-columns: 35% 35%
+    grid-template-rows: 50% 50%
+    grid-gap: 6%
+    padding-bottom: 140px
+  
+
+  .pricing-item 
+    margin-bottom: 20px
+
+    .pricing-item-title 
+      font-size: 19px
+    
+    .pricing-item-price 
+      font-size: 58px
+
+    .pricing-item-time 
+      font-size: 14px
+    
+    .pricing-item-about 
+      font-size: 14px
+    
+    .pricing-item-btn 
+      font-size: 14px
+
+  #agency.pricing-item 
+    width: 100%
+    margin: 0 calc(1% - 1px)
+  
+  .pricing-item-btn--active 
+    color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(255, 255, 255, 0.65)
+    font-weight: bold
+  
+
+
+
+@media (max-width: 480px) and (min-width: 320px)
+    .first-bg-container
+        padding: 35px
+        background-position: bottom center
+        height: 600px
+        .first-bg-text1
+            font-size: 41px
+        .first-bg-text2 
+            font-size: 18px
+            text-transform: capitalize
+        .first-bg-text3
+            font-size: 14px
+            text-transform: uppercase
+    .revolutionary-editor 
+        .download-btn
+            width: 390px
+            font-size: 48px
+        .revolutionary-texts-first
+            font-size: 26px
+        .revolutionary-texts-second
+            font-size: 14px
+        .first-item, .second-item
+            padding: 5px 
+            font-size: 14px
+    .what-you-get-right-header
+        display: none
+    .here-is-what
+        display: block !important
+        font-size: 32px
+        font-family: 'Montserrat'
+        font-weight: 900
+        color: #8d81ac
+        text-align: center
+        padding-bottom: 35px
+    .what-you-get-container
+        flex-direction: column
+        padding-left: 15px 
+        padding-right: 15px
+        padding-bottom: 25px
+        .what-you-get-right-img-size
+            height: 470px
+
+        .what-you-get-list
+            margin-bottom: 66px
+
+        .what-you-get-right
+            padding-left: 20px
+        
+        .what-you-get-list-item
+            flex-direction: column
+        .what-you-get-text-first, .what-you-get-text-second
+            text-align: center
+        
+    .talk-about-fork-container
+        padding-left: 15px 
+        padding-right: 15px
+        .talk-about-fork-header-text
+            font-size: 36px
+        .talk-about-fork-item
+            padding-left: 30px
+            text-align: center
+            padding-bottom: 30px
+        .talk-about-fork-last-text
+            display: none
+        .talk-about-fork-last
+            &::after
+            content: ''
+            display: block
+            border-bottom: 2px solid #a291a563
+            width: 86%
+            padding-top: 15px 
+            margin-left: 44px
+                    
+.pricing-title 
+    font-size: 30px
+    margin-bottom: 50px
+    line-height: 55px
+  
+  
+
+

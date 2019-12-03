@@ -1,0 +1,145 @@
+.main-header
+    background-color: #27262a
+    padding: 20px 0
+    color: $primary
+
+.header-logo
+    color: $primary
+    text-decoration: none
+    display: flex
+    align-items: center
+    transition: all .3s ease
+    font-family: $Hfont
+    img
+        display: inline-block
+        width: 40px
+        margin-right: 10px
+        transition: all .3s ease
+    span
+        font-size: 22px
+        text-transform: uppercase
+    &:hover
+        text-decoration: none
+        color: white
+        img
+            filter: brightness(200%)
+
+
+.main-header--nav-link
+    display: inline-block
+    color: $primary
+    font-family: $Hfont
+    font-weight: bold
+    font-size: 15px
+    transition: all .3s ease
+
+    &:not(:first-child)
+        margin-left: 25px
+
+    &:hover
+        text-decoration: none
+        color: white
+
+.def-btn
+    display: inline-block
+    min-width: 150px
+    padding: 13px
+    text-align: center
+    background-color: $primary
+    color: white
+    font-size: 14px
+    line-height: 1
+    font-weight: bold
+    font-family: $Hfont
+    border-radius: 20px
+    border: none
+    transition: all .3s ease
+
+    &:hover
+        background-color: #fff
+        color: $primary
+        text-decoration: none
+
+
+@media (max-width: 767px)
+
+    .burger-btn
+        display: inline-block
+        background-color: transparent
+        border: none
+        width: 32px
+        height: 28px
+        position: relative
+        
+        &:before, &:after,
+        span:before, span:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 4px
+            background-color: #fff
+            border-radius: 3px
+            left: 0
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+        
+        &:before
+            width: 70%
+            left: 30%
+            top: 0
+        &:after
+            bottom: 0
+        span:before, span:after
+            top: 50%
+            margin-top: -2px
+
+        &:focus
+            outline: none
+
+        &.active
+            &:before, &::after
+                opacity: 0
+            span:before, 
+                transform: rotate(45deg)
+            span:after
+                transform: rotate(-45deg)
+
+    .main-header
+        position: relative
+
+    .main-nav
+        position: absolute
+        top: 100%
+        left: 15px
+        width: calc(100% - 30px)
+        background-color: #333333
+        z-index: -1
+        transition: all 1s ease
+        transform: translateY(-100%)
+        &.active
+            transform: translateY(0)
+
+    .main-header--nav-link
+        display: block
+        width: 100%
+        padding: 14px 25px
+        border-bottom: 1px solid rgba(255,255,255,.3)
+        font-weight: 400
+        position: relative
+        color: white
+        &::before
+            content: ''
+            position: absolute
+            width: 4px
+            height: 60%
+            top: 20%
+            left: 0
+            transition: all .3s ease
+            opacity: 0
+            background-color: $primary
+        &:not(:first-child)
+            margin: 0
+        &:hover
+            color: $primary
+            &::before
+                opacity: 1
+
